@@ -62,6 +62,7 @@ body{
   position: absolute;
   top: 70%;
   margin-bottom: 15px;
+  margin-left: 47%;
   animation-duration: 4s;
   animation-name: animimg;
   animation-delay: 0.5s;
@@ -364,7 +365,6 @@ ul{
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
-	padding-left: 8px;
 }
 .footer-col .social-links a{
 	display: inline-block;
@@ -418,6 +418,9 @@ ul{
 #Cuerpo_3{
 	margin-top: 20vh;
 }
+#Imagen_Flecha_Panel{
+	margin-left: 45%;
+}
 }
 
 
@@ -439,6 +442,9 @@ ul{
 #Cuerpo_2 img{
 	width: 250px;
 	height: 300px;
+}
+#Imagen_Flecha_Panel{
+	margin-left: 42%;
 }
 }
 
