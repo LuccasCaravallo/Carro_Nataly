@@ -1,66 +1,170 @@
 <!DOCTYPE html>
-<html>
+<HTML LANG="ES">
 <head>
-	<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
-
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
-
-	<title>Plantilla 1</title>
+	<title>Chiveteria y Comidas Nataly</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="fontello.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-
 <body>
-	<header>
-        
-        <section>
-        	<div id="contenedor_banner">
+	
+<div id="cuerpo">
 
-        		<h1 href="#banner" class="link" id="Titulo">CARRITO PROGRASAN</h1>
-        		<h3 id="Titulo_Bajo">PLANTILLA UNO</h3>
-            	<img src="imagenes/Banner_Plantilla1.jpg" alt="" role="banner" id="banner">
-            
-            	<i id="prueba" class="fa-solid fa-angle-down"></i>
-            </div>
-        </section>
-	</header>
+	<img id="Imagen_Panel" src="imagenes/FondoNataly.jpg">
 
-	<div id="cabecera_Nav">	
-		<nav>
-     	<input type="checkbox" id="check">
-      	<label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      	</label>
-      <ul>
-	        <li><a class="active" href="#">INICIO</a></li>
-	        <li><a href="#">PRECIOS</a></li>
-	        <li><a href="#">MÁS VENDIDO</a></li>
-	        <li><a href="#">INFORMACÓN</a></li>
-	        <li><a href="#">MAPS</a></li>
-	      </ul>
-	    </nav>
-	</div>
-
-	<center><div id="div_icons">
-		<i class="fa-solid fa-burger" id="burger">   HAMBURGUESAS</i>
-		<i class="fa-solid fa-burger" id="combos">  COMBOS</i>
-		<!--  -->
-		<i class="fa-solid fa-martini-glass-citrus" id="bebidas">  BEBIDAS</i>
+	
+	<center><div id="texto_panel">
+		<h1>CHIVITERIA NATALY</h1>	
+		<h3>Av. Nicolás Guerra 206, 80000 San José, Departamento de San José</h3>
 	</div></center>
 
-	<center><div id="div_icons_responsive">
-		<i class="fa-solid fa-burger" id="burger_responsive"></i>
-		<i class="fa-solid fa-burger" id="combos_responsive"></i>
-		<i class="fa-solid fa-martini-glass-citrus"	id="bebidas_responsive"></i>
-	</div></center>	
+	<i id="flecha" class="fa-solid fa-angle-down"></i>
+</div>
+<hr style="width:100%;">
+	<center><div id="Cuerpo_2">
 
-	<div id="contenedor_hamburguesas">
-		<div id="div_hamburguesas">
-		<img src="imagenes/hamburguesa.png">
-		</div>
-	</div>
+		<h1>INFORMACIÓN</h1>
+		<hr style="width: 165px; margin-top: 5px;">
+
+		<p>Carro Nataly es una chiveteria situada en <a href="">Nicolas Guerra 206</a>, puedes pedir tanto a domicilio como en el mismo lugar, nos movemos por WhatsApp al <a href="">099378476</a>, por Instagram <a target="_block" href="https://www.instagram.com/carro_nataly/?hl=es-la">@carro_nataly</a> o por Facebook como <a target="_block" href="https://www.facebook.com/pages/category/Grocery-Store/Carro-Nataly-112041650416843/"> @Carro Nataly</a>. Hace tu pedido y te atenderemos enseguida a domicilio</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13175.720578472135!2d-56.7170148!3d-34.3522559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53d86f2b53580039!2sCarrito%20Nataly!5e0!3m2!1ses-419!2suy!4v1648124099066!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" id="map"></iframe>
+	</div></center>
+	
+
+	<center><div id="Cuerpo_3">
+
+		<h1>LO MÁS VENDIDO</h1>
+	
+	<!--   Tarjetas-->
+    <div class="title-cards">
+      <h2></h2>
+    </div>
+    <div class="container-card">
+
+    <div class="card">
+        <figure>
+            <img src="imagenes/img_tarjeta6.jpg">
+        </figure>
+        <div class="contenido-card" title="Carro Nataly, Milanesa x2 con Papas Fritas y Nuggets" alt="" role="Carro Nataly">
+            <h3>Milanesas con Fritas y Nuggets</h3>
+            <p> $470 </p>
+            
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="imagenes/img_tarjeta1.jpg" title="Carro Nataly, Hamburguesa Completa" alt="" role="Carro Nataly">
+        </figure>
+        <div class="contenido-card">
+            <h3>Hamburguesa Completa</h3>
+            <p> $180 </p>
+            
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="imagenes/img_tarjeta2.jpg" title="Carro Nataly, Bauru completo" alt="" role="Carro Nataly">
+        </figure>
+        <div class="contenido-card">
+            <h3>Bauru completo</h3>
+            <p> $310 </p>
+            
+        </div>
+    </div>
+    </div>
+<!--Fin   Tarjetas-->	
+
+<!--   Tarjetas-->
+    <div class="title-cards2">
+      <h2></h2>
+    </div>
+    <div class="container-card2">
+
+    <div class="card2">
+        <figure>
+            <img src="imagenes/img_tarjeta3.jpg" title="Carro Nataly, Baurú" alt="" role="Carro Nataly">
+        </figure>
+        <div class="contenido-card2">
+            <h3>Baurú</h3>
+            <p> $310 </p>
+            
+        </div>
+    </div>
+    <div class="card2">
+        <figure>
+            <img src="imagenes/img_tarjeta4.jpg" title="Carro Nataly, Gramajo" alt="" role="Carro Nataly">
+        </figure>
+        <div class="contenido-card2">
+            <h3>Gramajo</h3>
+            <p> $200 </p>
+            
+        </div>
+    </div>
+    <div class="card2">
+        <figure>
+            <img src="imagenes/img_tarjeta5.jpg" title="Carro Nataly, Napolitana Completa" alt="" role="Carro Nataly">
+        </figure>
+        <div class="contenido-card2">
+            <h3>Napolitana Completa</h3>
+            <p> $350 </p>
+            
+        </div>
+    </div>
+    </div>
+<!--Fin   Tarjetas-->	
+
+	</div></center>
 
 
 
-</body>
+
+</body>  
+
+<!--footer (inicio)-->
+
+<div id="_Footer_"></div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>CONTACTO  - CREADOR</h4>
+                <ul>
+                    <li><a href="mailto:prograsanuy@gmail.com" target="_blanck"  style="color: white;">prograsanuy@gmail.com</a></li>
+                    <li style="color: #a6a6ad;">Comunicate para adquirir</li>
+                    <li style="color: #a6a6ad;">nuestro servicio</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>DATOS</h4>
+                <ul>
+                    <li style="color: #a6a6ad;">CARRITO</li>
+                    <li style="color: #a6a6ad;">URUGUAY</li>
+                    <li style="color: #a6a6ad;">NICOLAS GUERRA 206</li>
+                </ul>
+            </div>
+        <div class="footer-col">
+                <h4>DUEÑOS</h4>
+                <ul>
+                    <li style="color: #a6a6ad;">Rafael Umpierrez</li>
+                    <li style="color: #a6a6ad;">Natalia Bogarin</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>REDES</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/pages/category/Grocery-Store/Carro-Nataly-112041650416843/" target="_blanck"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/carro_nataly/?hl=es" target="_blanck"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--footer (finalizacion)-->
+
 </html>
