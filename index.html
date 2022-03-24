@@ -1,171 +1,502 @@
-<!DOCTYPE html>
-<HTML LANG="ES">
-<head>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<title>Chiveteria y Comidas Nataly</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="fontello.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
-	
-<div id="cuerpo">
+*{
+	margin: 0;
+	padding: 0;
+}
 
-	<img id="Imagen_Panel" src="imagenes/FondoNataly.jpg">
+body{
+	background-color: white;
+}
 
-	
-	<center><div id="texto_panel">
-		<h1>CARRO NATALY</h1>	
-		<h3>Nicolas Guerra 206, Esquina Rivera</h3>
-	</div></center>
+#Cuerpo_2 #Cuerpo_3{
+	background-color: white;
+}
 
-	<img id="Imagen_Flecha_Panel" src="imagenes/flecha_panel.png">
-</div>
-<hr style="width:100%;">
-	<center><div id="Cuerpo_2">
+#map{
+	margin-top: 25px;
+	height: 350px;
+	width: 500px;
+}
 
-		<h1>INFORMACIÓN</h1>
-		<hr style="width: 165px; margin-top: 5px;">
+#flecha{
+	color: white;
+	position: absolute;
+	border: 0px solid black;
+	top: 75%;
+	width: 100%;
+	text-align: center;
+	left: 50%;
+	transform: translate(-50%, 10%);
+	font-size: 3rem;
+  animation-duration: 4s;
+  animation-name: animflecha;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;	
+}
 
-		<p>Carro Nataly es una chiveteria situada en <a href="">Nicolas Guerra 206</a>, puedes pedir tanto a domicilio como en el mismo lugar, nos movemos por WhatsApp al <a href="">099378476</a>, por Instagram <a target="_block" href="https://www.instagram.com/carro_nataly/?hl=es-la">@carro_nataly</a> o por Facebook como <a target="_block" href="https://www.facebook.com/pages/category/Grocery-Store/Carro-Nataly-112041650416843/"> @Carro Nataly</a>. Hace tu pedido y te atenderemos enseguida a domicilio</p>
+@keyframes animflecha {
 
-		<img src="imagenes/Carro_Comida.jpg" title="Carro Nataly" alt="" role="Banner">
-	</div></center>
-	
+  0% {
+    top: 50%;
+  }
 
-	<center><div id="Cuerpo_3">
-
-		<h1>LO MÁS VENDIDO</h1>
-	
-	<!--   Tarjetas-->
-    <div class="title-cards">
-      <h2></h2>
-    </div>
-    <div class="container-card">
-
-    <div class="card">
-        <figure>
-            <img src="imagenes/img_tarjeta6.jpg">
-        </figure>
-        <div class="contenido-card" title="Carro Nataly, COMIDA" alt="" role="Carro Nataly">
-            <h3>Milanesa x2 con Papas Fritas y Nuggets</h3>
-            <p> $470 </p>
-            
-        </div>
-    </div>
-    <div class="card">
-        <figure>
-            <img src="imagenes/img_tarjeta1.jpg" title="Carro Nataly, Hamburguesa Completa" alt="" role="Carro Nataly">
-        </figure>
-        <div class="contenido-card">
-            <h3>Hamburguesa Completa</h3>
-            <p> $180 </p>
-            
-        </div>
-    </div>
-    <div class="card">
-        <figure>
-            <img src="imagenes/img_tarjeta2.jpg" title="Carro Nataly, Bauru completo" alt="" role="Carro Nataly">
-        </figure>
-        <div class="contenido-card">
-            <h3>Bauru completo</h3>
-            <p> $310 </p>
-            
-        </div>
-    </div>
-    </div>
-<!--Fin   Tarjetas-->	
-
-<!--   Tarjetas-->
-    <div class="title-cards2">
-      <h2></h2>
-    </div>
-    <div class="container-card2">
-
-    <div class="card2">
-        <figure>
-            <img src="imagenes/img_tarjeta3.jpg" title="Carro Nataly, COMIDA" alt="" role="Carro Nataly">
-        </figure>
-        <div class="contenido-card2">
-            <h3>Baurú</h3>
-            <p> $310 </p>
-            
-        </div>
-    </div>
-    <div class="card2">
-        <figure>
-            <img src="imagenes/img_tarjeta4.jpg" title="Carro Nataly, Gramajo" alt="" role="Carro Nataly">
-        </figure>
-        <div class="contenido-card2">
-            <h3>Gramajo</h3>
-            <p> $200 </p>
-            
-        </div>
-    </div>
-    <div class="card2">
-        <figure>
-            <img src="imagenes/img_tarjeta5.jpg" title="Carro Nataly, COMIDA" alt="" role="Carro Nataly">
-        </figure>
-        <div class="contenido-card2">
-            <h3>Napolitana Completa</h3>
-            <p> $350 </p>
-            
-        </div>
-    </div>
-    </div>
-<!--Fin   Tarjetas-->	
-
-	</div></center>
+}
 
 
+@media screen and (max-width: 540px){
+	#map{
+		margin-top: 25px;
+		height: 300px;
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 430px){
+	#map{
+		margin-top: 25px;
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 330px){
+	#map{
+		margin-top: 25px;
+		height: 250px;
+		width: 200px;
+	}
+}
+
+#cuerpo
+{
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	overflow: hidden;
+	border: 0px solid black;
+}
+
+#Imagen_Panel{
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+}
+
+#cuerpo h1
+{
+	font-family: arial;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	/*margin-top: -65vh;
+	margin-left: 41%; /*41%*/
+}
+
+#cuerpo h3
+{
+	font-family: arial;
+	color: white;
+	margin-top: 10px;
+	font-size: 18px;
+	text-align: center;
+
+	/*margin-top: -57vh;
+	margin-left: 38%; /*38%*/
+}
+
+#cuerpo #texto_panel{
+	width: 80%;
+	height: 20vh;
+	margin-top: -470px;
+	border: 0px solid black;
+	margin-bottom: 100px;
+}
+
+#Imagen_Flecha_Panel{
+	width: 60px;
+	opacity: 0.4;
+  position: absolute;
+  top: 70%;
+  margin-bottom: 15px;
+  margin-left: 47%;
+  animation-duration: 4s;
+  animation-name: animimg;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animimg {
+
+  0% {
+    top: 50%;
+  }
+
+}
+
+#Cuerpo_2{
+	width: 100%;
+	height: 99vh;
+}
+
+#Cuerpo_2 p{
+	margin-top: 5vh;
+	text-align: center;
+	width: 50%;
+	color: grey;
+	color: grey;
+	font-size: 15px;
+	font-family: verdana;
+}
+
+#Cuerpo_2 h1{
+	font-family: arial;
+	background-color: #EAEDED;
+	padding: 25px;
+	width: 100%;
+	margin-bottom: 20px;
+	color: grey;
+}
+
+#Cuerpo_2 img{
+	margin-top: 30px;
+	width: 700px;
+	height: 400px;
+	border-radius: 5px;
+}
+
+#Cuerpo_2 a{
+	text-decoration: none;
+	color: #AEB6BF;
+}
+
+/* CUERPO 3  */
+
+#Cuerpo_3{
+	width: 100%;
+	height: 99vh;
+}
+
+#Cuerpo_3 #sdsad{
+	margin-top: 5vh;
+	text-align: center;
+	width: 50%;
+	color: white;
+	font-family: arial;
+}
+
+#Cuerpo_3 h1{
+	font-family: arial;
+	background-color: #EAEDED;
+	padding: 25px;
+	color: grey;
+}
+
+/* TARJETAS  */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+	margin-bottom: 0%;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#F4F6F6;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+
+/*Fin-Cards*/
 
 
-</body>  
+/* TARJETAS  */
 
-<!--footer (inicio)-->
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Cards*/
+.container-card2{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+	margin-bottom: 1%;
+}
+.title-cards2{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card2{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#F4F6F6;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card2 img{
+	width: 100%;
+	height: 210px;
+}
+.card2 .contenido-card2{
+	padding: 15px;
+	text-align: center;
+}
+.card2 .contenido-card2 h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card2 .contenido-card2 p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card2 .contenido-card2 a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
 
-<div id="_Footer_"></div>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col">
-                <h4>CONTACTO  - CREADOR</h4>
-                <ul>
-                    <li><a href="mailto:Lucascaravallo@gmail.com" target="_blanck"  style="color: white;">Lucascaravallo@gmail.com</a></li>
-                    <li><a href="mailto:mm87744@gmail.com" target="_blanck"  style="color: white;">mm87744@gmail.com</a></li>
-                    <li style="color: #a6a6ad;">Comunicate para adquirir</li>
-                    <li style="color: #a6a6ad;">mi servicio</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>DATOS</h4>
-                <ul>
-                    <li style="color: #a6a6ad;">CARRITO</li>
-                    <li style="color: #a6a6ad;">URUGUAY</li>
-                    <li style="color: #a6a6ad;">NICOLAS GUERRA 206</li>
-                </ul>
-            </div>
-        <div class="footer-col">
-                <h4>DUEÑOS</h4>
-                <ul>
-                    <li style="color: #a6a6ad;">Rafael Umpierrez</li>
-                    <li style="color: #a6a6ad;">Natalia Bogarin</li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>REDES</h4>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/pages/category/Grocery-Store/Carro-Nataly-112041650416843/" target="_blanck"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/carro_nataly/?hl=es" target="_blanck"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card2{
+		flex-wrap: wrap;
+	}
+	.card2{
+		margin: 15px;
+	}
+}
 
-<!--footer (finalizacion)-->
+/*Fin-Cards*/
 
-</html>
+/* FOOTER  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+footer{
+	margin-top: 500px;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+    margin-left: 3.5%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -15px;
+	background-color: white;
+	overflow: hidden;	
+	height: 3px;
+	box-sizing: border-box;
+	width: 145px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  footer{
+  	margin-top: 2000px;
+  }
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 376px){
+  .footer-col{
+    width: 100%;
+}
+
+#Cuerpo_3{
+	margin-top: 300px;
+}
+}
+
+@media(max-width: 1080px){
+#Cuerpo_3{
+	margin-top: 20vh;
+}
+}
+@media(max-width: 800px){
+#Cuerpo_3{
+	margin-top: 20vh;
+}
+}
+
+@media(max-width: 587px){
+#Cuerpo_3{
+	margin-top: 20vh;
+}
+#Imagen_Flecha_Panel{
+	margin-left: 45%;
+}
+}
+
+
+@media(max-width: 737px){
+#Cuerpo_2 img{
+	width: 500px;
+	height: 300px;
+}
+}
+
+@media(max-width: 515px){
+#Cuerpo_2 img{
+	width: 400px;
+	height: 300px;
+}
+}
+
+@media(max-width: 425px){
+#Cuerpo_2 img{
+	width: 250px;
+	height: 300px;
+}
+#Imagen_Flecha_Panel{
+	margin-left: 42%;
+}
+}
+
+@media(max-width: 500px){
+#Cuerpo_2 p{
+	width: 80%;
+}
+}
+/* FIN FOOTER  */
+
+
+@media only screen and (max-width:1000px){
+	#Imagen_Panel{
+		width: 100%;
+		height: 100vh;
+	}
+}
